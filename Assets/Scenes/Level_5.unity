@@ -490,6 +490,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cc497152b1b59704681eab23dbc58baf, type: 3}
+    - target: {fileID: 1976182074268042525, guid: 9e539c795c0e3104db1616c078a0f877, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976182074268042525, guid: 9e539c795c0e3104db1616c078a0f877, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976182074268042525, guid: 9e539c795c0e3104db1616c078a0f877, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5642127502425438003, guid: 9e539c795c0e3104db1616c078a0f877, type: 3}
       propertyPath: m_Camera
       value: 
@@ -729,7 +741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.164, y: 0.21930258}
   m_AnchorMax: {x: 0.8363042, y: 0.85760516}
-  m_AnchoredPosition: {x: 0.08999634, y: -0.20000076}
+  m_AnchoredPosition: {x: 0.08999634, y: -0.20000458}
   m_SizeDelta: {x: 0.1800003, y: 0.37000084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215046778
@@ -6694,6 +6706,7 @@ GameObject:
   - component: {fileID: 402941029}
   - component: {fileID: 402941031}
   - component: {fileID: 402941030}
+  - component: {fileID: 402941032}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -6817,6 +6830,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402941028}
   m_CullTransparentMesh: 1
+--- !u!114 &402941032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402941028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 402941030}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041F\u0430\u0443\u0437\u0430"
+  en: Pause
+  tr: Duraklat
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: 
+  uz: 
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: 
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 3/3 completed
+  componentTextField: 1
+  countLang: 3
 --- !u!1 &435191099
 GameObject:
   m_ObjectHideFlags: 0
@@ -7070,7 +7135,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7112,6 +7177,7 @@ GameObject:
   - component: {fileID: 564443997}
   - component: {fileID: 564443999}
   - component: {fileID: 564443998}
+  - component: {fileID: 564444000}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -7235,6 +7301,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564443996}
   m_CullTransparentMesh: 1
+--- !u!114 &564444000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564443996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 564443998}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C \u043F\u0440\u043E\u0439\u0434\u0435\u043D!"
+  en: Level passed!
+  tr: "Seviye ge\xE7ildi!"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: 
+  uz: 
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: 
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 3/3 completed
+  componentTextField: 1
+  countLang: 3
 --- !u!4 &572150205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5142994003365869318, guid: b356c2627bb054741a6c91ad19ece51a, type: 3}
@@ -7800,6 +7918,7 @@ GameObject:
   - component: {fileID: 748126375}
   - component: {fileID: 748126377}
   - component: {fileID: 748126376}
+  - component: {fileID: 748126378}
   m_Layer: 5
   m_Name: SubTitle
   m_TagString: Untagged
@@ -7924,6 +8043,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748126374}
   m_CullTransparentMesh: 1
+--- !u!114 &748126378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748126374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMPComponent: {fileID: 748126376}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041D\u0443\u0431\u0438\u043A \u0438 \u0435\u0433\u043E \u0434\u0440\u0443\u0437\u044C\u044F
+    \u0442\u0435\u043F\u0435\u0440\u044C \u043D\u0430 \u0441\u0432\u043E\u0431\u043E\u0434\u0435!"
+  en: Nubik and his friends are now free!
+  tr: "Nubik ve arkada\u015Flar\u0131 art\u0131k \xF6zg\xFCr!"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: 
+  uz: 
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: 
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 3/3 completed
+  componentTextField: 1
+  countLang: 3
 --- !u!4 &765403296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6488691034092888055, guid: 757e37b1ea068e443854048f8b610b40, type: 3}
@@ -8473,7 +8645,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.164, y: 0.21930258}
   m_AnchorMax: {x: 0.8363042, y: 0.85760516}
-  m_AnchoredPosition: {x: 0.08999634, y: -0.20000076}
+  m_AnchoredPosition: {x: 0.08999634, y: -0.20000458}
   m_SizeDelta: {x: 0.1800003, y: 0.37000084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &866278454
