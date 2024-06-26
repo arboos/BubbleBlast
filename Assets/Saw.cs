@@ -11,6 +11,7 @@ public class Saw : MonoBehaviour
     public Rigidbody2D pointRb;
 
     public ParticleSystem wallCollision;
+    public ParticleSystem enemyCollision;
 
     public float maxDist = 2f;
     public float force = 2f;
@@ -47,10 +48,11 @@ public class Saw : MonoBehaviour
                 sawRB.position = mousPos;
             }
         }
+        sawRB.velocity = new Vector2(Mathf.Clamp(sawRB.velocity.x, -5, 5), Mathf.Clamp(sawRB.velocity.y, -5, 5));
 
         if (sawRB.isKinematic == false)
         {
-            sawRB.velocity = sawRB.velocity.normalized * 7;
+            sawRB.velocity = new Vector2(Mathf.Clamp(sawRB.velocity.x, -5, 5), Mathf.Clamp(sawRB.velocity.y, -5, 5));
         }
     }
 
@@ -64,6 +66,7 @@ public class Saw : MonoBehaviour
     {
         isTouched=false;
         sawRB.isKinematic=false;
+        
 
         SawLine.Instance.gameObject.SetActive(false);
 
@@ -76,6 +79,7 @@ public class Saw : MonoBehaviour
 
         gameObject.GetComponent<SpringJoint2D>().enabled = false;
         this.enabled = false;
+        GetComponent<Animator>().SetTrigger("Rotating");
     }
 
     private void OnCollisionEnter2D(Collision2D other)

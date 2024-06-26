@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Planet
+  - Enemy
   layers:
   - Default
   - TransparentFX
