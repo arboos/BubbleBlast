@@ -21,7 +21,10 @@ public class Planet : MonoBehaviour
                 particles.transform.position = transform.position;
                 particles.startColor = new Color(_color.r, _color.g, _color.b, 1f);
                 particles.Play();
-            
+
+                AudioSource bubbleSound = Instantiate(GameManager.Instance.bubbleSound);
+                bubbleSound.Play();
+                
                 Destroy(GetComponent<BoxCollider2D>());
 
                 GameManager.Instance.enemyList.Remove(gameObject);
@@ -29,7 +32,8 @@ public class Planet : MonoBehaviour
                 {
                     GameManager.Instance.Win();
                 }
-                
+
+                Destroy(bubbleSound.gameObject, 1f);
                 Destroy(particles.gameObject, 1f);
             }
             else

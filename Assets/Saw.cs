@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Saw : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class Saw : MonoBehaviour
     public float force = 2f;
     public bool isTouched = false;
 
+
+    public AudioSource[] wallSounds;
 
     private void Awake()
     {
@@ -89,6 +92,8 @@ public class Saw : MonoBehaviour
             ParticleSystem particles = Instantiate(wallCollision);
             particles.transform.position = other.GetContact(0).point;
             particles.Play();
+
+            wallSounds[Random.Range(0, wallSounds.Length-1)].Play();
             
             Destroy(particles.gameObject, 1f);
         }
