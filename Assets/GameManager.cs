@@ -40,6 +40,12 @@ public class GameManager : MonoBehaviour
         Saw.Instance.gameObject.SetActive(false);
         Cell.SetTrigger("Win");
         winSound.Play();
+        
+        if (SceneManager.GetActiveScene().buildIndex > YandexGame.savesData.levelsReached)
+        {
+            YandexGame.savesData.levelsReached = SceneManager.GetActiveScene().buildIndex;
+            YandexGame.SaveProgress();
+        }
 
         StartCoroutine(WinIen());
     }
@@ -49,11 +55,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         winMask.SetActive(true);
-
-        if (SceneManager.GetActiveScene().buildIndex > YandexGame.savesData.levelsReached)
-        {
-            YandexGame.savesData.levelsReached = SceneManager.GetActiveScene().buildIndex;
-        }
     }
 
     public void LoadNext()

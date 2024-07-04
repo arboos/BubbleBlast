@@ -438,7 +438,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\u041D\u0443\u0431\u0438\u043A \u0438 \u041F\u0438\u043B\u0430: \u041F\u043E\u0431\u0435\u0433
-    \u043E\u0442 \u0425\u0435\u0440\u043E\u0431\u0440\u0438\u043D\u0430"
+    \u043E\u0442 \u0425\u0435\u0440\u043E\u0431\u0440\u0438\u043D\u0430!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 76293d887268f1c4bbd851bdd78e58bb, type: 2}
   m_sharedMaterial: {fileID: -95731815013120590, guid: 76293d887268f1c4bbd851bdd78e58bb, type: 2}
@@ -534,8 +534,8 @@ MonoBehaviour:
   text: 
   ru: "\u041D\u0443\u0431\u0438\u043A \u0438 \u041F\u0438\u043B\u0430: \u041F\u043E\u0431\u0435\u0433
     \u043E\u0442 \u0425\u0435\u0440\u043E\u0431\u0440\u0438\u043D\u0430"
-  en: 'Noob and Jigsaw: Escape from Herobrine'
-  tr: "Noob ve Jigsaw: Herobrine'dan Ka\xE7\u0131\u015F"
+  en: 'Nubik and Saw: Escape from Herobrine'
+  tr: "Nubik ve Testere: Herobrin'den Ka\xE7\u0131\u015F"
   az: 
   be: 
   he: 
@@ -565,9 +565,9 @@ MonoBehaviour:
   uniqueFont: {fileID: 0}
   additionalText: {fileID: 0}
   textHeight: 20
-  processTranslateLabel: 3/3 completed
+  processTranslateLabel: 0/3 completed
   componentTextField: 1
-  countLang: 3
+  countLang: 0
 --- !u!1 &140104033
 GameObject:
   m_ObjectHideFlags: 0
